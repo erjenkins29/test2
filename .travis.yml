@@ -11,4 +11,6 @@ install:"pip install -q -r requirements.txt --use-mirrors"
 # command to build
 script:python test.py
 
-
+branches:
+    only:
+        - master
