@@ -1,0 +1,17 @@
+language:python
+python:
+  -"2.7"
+
+# use this to prepare the system to install prerequisites or dependencis
+#before_install:"sudo yum update"
+
+# command to install dependencis
+install:"pip install -q -r requirements.txt --use-mirrors"
+
+# command to build
+script:python test.py
+
+branches:
+    only:
+        - mybranch
+
